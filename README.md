@@ -11,10 +11,10 @@ You can view live demo on <a href="https://h-search-engine.herokuapp.com/"> View
 ## App features
 
 <ul>
-  <li> Searching and caching of previous search terms <li>
-  <li> Sorting including reverse sorting <li>
-  <li> Paginated and lazy loading <li>
-  <li> Ability to remove previous read or unnnecesary stories <li>
+  <li> Searching and caching of previous search terms </li>
+  <li> Sorting including reverse sorting </li>
+  <li> Paginated and lazy loading </li>
+  <li> Ability to remove previous read or unnnecesary stories </li>
 </ul>
 
 ## Run Locally
