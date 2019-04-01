@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App has a valid snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="todoListMain"
+  >
+    <div
+      className="Header"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          id="inputBox"
+          onChange={[Function]}
+          placeholder="Topic"
+          value="redux"
+        />
+        <button
+          id="addTask"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    className="theList"
+  />
+  <div
+    className="theList"
+  >
+    <div
+      className="theList-header"
+    >
+      <span
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      >
+        <button
+          className="button-inline"
+          onClick={[Function]}
+          type="button"
+        >
+          Title
+        </button>
+        <i
+          class="fas fa-sort"
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      >
+        <button
+          className="button-inline button-active"
+          onClick={[Function]}
+          type="button"
+        >
+          Author
+        </button>
+        <i
+          class="fas fa-sort"
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      >
+        <button
+          className="button-inline button-active"
+          onClick={[Function]}
+          type="button"
+        >
+          Comments
+        </button>
+        <i
+          class="fas fa-sort"
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "width": "20%",
+          }
+        }
+      >
+        <button
+          className="button-inline button-active"
+          onClick={[Function]}
+          type="button"
+        >
+          Points
+        </button>
+        <i
+          class="fas fa-sort"
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "width": "5%",
+          }
+        }
+      >
+        Read
+      </span>
+      <span
+        style={
+          Object {
+            "width": "5%",
+          }
+        }
+      >
+        Remove
+      </span>
+    </div>
+  </div>
+  <div
+    className="interactions"
+  >
+    <div>
+      <div
+        class="lds-ellipsis"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+      Loading...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Button has a valid snapshot 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Display List of Items has a valid snapshot 1`] = `
+<div
+  className="theList"
+>
+  <div
+    className="theList-header"
+  >
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    >
+      <button
+        className="button-inline"
+        onClick={[Function]}
+        type="button"
+      >
+        Title
+      </button>
+      <i
+        class="fas fa-sort"
+      />
+    </span>
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    >
+      <button
+        className="button-inline button-active"
+        onClick={[Function]}
+        type="button"
+      >
+        Author
+      </button>
+      <i
+        class="fas fa-sort"
+      />
+    </span>
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    >
+      <button
+        className="button-inline button-active"
+        onClick={[Function]}
+        type="button"
+      >
+        Comments
+      </button>
+      <i
+        class="fas fa-sort"
+      />
+    </span>
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    >
+      <button
+        className="button-inline button-active"
+        onClick={[Function]}
+        type="button"
+      >
+        Points
+      </button>
+      <i
+        class="fas fa-sort"
+      />
+    </span>
+    <span
+      style={
+        Object {
+          "width": "5%",
+        }
+      }
+    >
+      Read
+    </span>
+    <span
+      style={
+        Object {
+          "width": "5%",
+        }
+      }
+    >
+      Remove
+    </span>
+  </div>
+  <div
+    className="theList-row"
+  >
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    >
+      1
+    </span>
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "width": "5%",
+        }
+      }
+    >
+      <a>
+        View
+      </a>
+    </span>
+    <span
+      style={
+        Object {
+          "width": "5%",
+        }
+      }
+    >
+      <button
+        className="button-inline"
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          class="fas fa-trash-alt"
+        />
+      </button>
+    </span>
+  </div>
+  <div
+    className="theList-row"
+  >
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    >
+      2
+    </span>
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "width": "20%",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "width": "5%",
+        }
+      }
+    >
+      <a>
+        View
+      </a>
+    </span>
+    <span
+      style={
+        Object {
+          "width": "5%",
+        }
+      }
+    >
+      <button
+        className="button-inline"
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          class="fas fa-trash-alt"
+        />
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Header with search has a valid snapshot 1`] = `
+<div
+  className="todoListMain"
+>
+  <div
+    className="Header"
+  >
+    <form>
+      <input
+        id="inputBox"
+        placeholder="Topic"
+      />
+      <button
+        id="addTask"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+</div>
+`;

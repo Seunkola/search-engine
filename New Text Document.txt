@@ -1,0 +1,91 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import TodoList from './TodoList'
+import TodoItems from './TodoItems'
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      items: [],
+      currentItem: {text:'', key:''},
+    }
+  }
+  //Handle user Input
+  handleInput = e => {
+    const itemText = e.target.value
+    const currentItem = {text:itemText, key:Date.now()}
+    this.setState({
+      currentItem,
+    })
+  }
+  //Add item to list
+  addItem = e => {
+    e.preventDefault();
+    const newItem = this.state.currentItem
+    if(newItem.text !== ''){
+      console.log(newItem)
+      const items = [...this.state.items, newItem]
+      this.setState = ({
+        items: items,
+        currentItem: {text:'', key:''},
+      })
+    }
+  }
+
+  inputElement = React.createRef()
+
+  //delete item from list
+  deleteItem = key => {
+    const filteredItems = this.state.items.filter(item => {
+      return item.key !== key
+    })
+    this.setState({
+      items: filteredItems
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <TodoList 
+        addItem={this.addItem} 
+        inputElement={this.inputElement}
+        handleInput={this.handleInput}
+        currentItem={this.state.currentItem}/>
+        <TodoItems entries={this.state.items} deleteItem={this.deleteItem} />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
+import React, {Component} from 'react'
+class Header extends Component {
+    componentDidUpdate = () => {
+      this.props.inputElement.current.focus()
+    }
+    
+    render() {
+        return(
+            <div className="todoListMain">
+                <div className="Header">
+                <form onSubmit={this.props.addItem}>
+                    <input id="inputBox" placeholder="Task" 
+                    ref={this.props.inputElement}
+                    value={this.props.currentItem.text}
+                    onChange={this.props.handleInput}/>
+
+                    <button id="addTask" type="submit">Add Task</button>
+                </form>
+                </div>
+            </div>
+        )
+    }
+    
+}
+
+export default Header;

@@ -6,9 +6,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#inputBox {
+  margin: 1%;
+  box-shadow:3px 3px 5px 1px #ccc;
+  border-style: solid;
+  border-color: white;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#addTask {
+  margin: 1%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 3px 1px #000;
+}
+
+a {
+  color: #222;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #dddddd;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background: transparent;
+  color: #808080;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #222;
+}
+  
