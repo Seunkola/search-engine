@@ -19,11 +19,11 @@ You can view live demo on <a href="https://h-search-engine.herokuapp.com/"> View
 
 ## Run Locally
 <ol>
-  <li> Clone project <li>
+  <li> Clone project </li>
   <li> cd project directory </li>
-  <li> install dependencies for react for more info visit <a href="https://github.com/facebook/create-react-app"> React official doc</a>
+  <li> install dependencies for react for more info visit <a href="https://github.com/facebook/create-react-app"> React official doc</a> </li>
   <li> npm start </li>
-  <li> Open [http://localhost:3000] <li>
+  <li> Open [http://localhost:3000] </li>
 </ol>
 
 ## Run Test 
@@ -31,7 +31,7 @@ You can view live demo on <a href="https://h-search-engine.herokuapp.com/"> View
 The test consits of snapshots test with Jest and unit test with enzyme. This tests include
 <ul>
   <li>Test app rendering without crashing </li>
-  <li> Test header search function <li>
+  <li> Test header search function </li>
   <li> Test List display components to validate list are properly returned </li>
   <li> Test the update search function </li>
 </ul>
