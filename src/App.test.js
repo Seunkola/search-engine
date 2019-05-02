@@ -29,12 +29,12 @@ describe('App', () => {
 describe('Header with search', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Header />, div);
+    ReactDOM.render(<Header searchTodo="test" onSearchSubmit={() => 'test'} onSearchChange={() => ''} />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   test('has a valid snapshot', () => {
-    const component = renderer.create( <Header /> );
+    const component = renderer.create( <Header searchTodo="test" onSearchSubmit={() => 'test'} onSearchChange={() => ''} /> );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -70,9 +70,10 @@ describe('Display List of Items', () => {
   it('renders without crashing', () => {
     const div =  document.createElement('div');
     ReactDOM.render(<TodoItems 
-      entries={props.list}
+        entries={props.list}
         sortKey={props.sortKey}
-        isSortReverse={props.isSortReverse} />, div);
+        isSortReverse={props.isSortReverse}
+        onDismiss={() => {}} />, div);
   });
 
   test('has a valid snapshot', () => {
@@ -81,6 +82,7 @@ describe('Display List of Items', () => {
       entries={props.list}
       sortKey={props.sortKey}
       isSortReverse={props.isSortReverse} 
+      onDismiss={() => {}}
       /> );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -92,6 +94,7 @@ describe('Display List of Items', () => {
     entries={props.list}
     sortKey={props.sortKey}
     isSortReverse={props.isSortReverse}
+    onDismiss={() => {}}
      /> );
     expect(element.find('.theList-row').length).toBe(2);
   });

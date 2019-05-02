@@ -129,13 +129,13 @@ class App extends Component {
   }
 }
 
-Button.PropTypes = {
+Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
 
-TodoItems.PropTypes = {
+TodoItems.propTypes = {
   entries: PropTypes.arrayOf(
     PropTypes.shape({
       objectID: PropTypes.string.isRequired,
@@ -150,7 +150,7 @@ TodoItems.PropTypes = {
   onDismiss: PropTypes.func.isRequired,
 }
 
-Header.PropTypes = {
+Header.propTypes = {
   searchTodo: PropTypes.string.isRequired,
   onSearchSubmit: PropTypes.func.isRequired,
   onSearchChange: PropTypes.func,

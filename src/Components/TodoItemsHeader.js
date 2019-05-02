@@ -18,7 +18,7 @@ class ListHeader extends Component {
                     >
                     Title
                     </Button>
-                    <i class="fas fa-sort"></i>
+                    <i className="fas fa-sort"></i>
                 </span>
                 <span style={{ width: '20%' }}>
                     <Sort
@@ -28,7 +28,7 @@ class ListHeader extends Component {
                     >
                     Author
                     </Sort>
-                    <i class="fas fa-sort"></i>
+                    <i className="fas fa-sort"></i>
                 </span>
                 <span style={{ width: '20%' }}>
                     <Sort
@@ -38,7 +38,7 @@ class ListHeader extends Component {
                     >
                     Comments
                     </Sort>
-                    <i class="fas fa-sort"></i>
+                    <i className="fas fa-sort"></i>
                 </span>
                 <span style={{ width: '20%' }}>
                     <Sort
@@ -48,7 +48,7 @@ class ListHeader extends Component {
                     >
                     Points
                     </Sort>
-                    <i class="fas fa-sort"></i>
+                    <i className="fas fa-sort"></i>
                 </span>
                 <span style={{ width: '5%' }}>
                     Read

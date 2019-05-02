@@ -17,7 +17,7 @@ class Button extends Component {
                 {
                     !children
                     ?
-                    <i class="fas fa-trash-alt"></i>
+                    <i className="fas fa-trash-alt"></i>
                     :
                     children
                 }

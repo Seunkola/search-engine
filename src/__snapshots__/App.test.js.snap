@@ -52,7 +52,7 @@ exports[`App has a valid snapshot 1`] = `
           Title
         </button>
         <i
-          class="fas fa-sort"
+          className="fas fa-sort"
         />
       </span>
       <span
@@ -70,7 +70,7 @@ exports[`App has a valid snapshot 1`] = `
           Author
         </button>
         <i
-          class="fas fa-sort"
+          className="fas fa-sort"
         />
       </span>
       <span
@@ -88,7 +88,7 @@ exports[`App has a valid snapshot 1`] = `
           Comments
         </button>
         <i
-          class="fas fa-sort"
+          className="fas fa-sort"
         />
       </span>
       <span
@@ -106,7 +106,7 @@ exports[`App has a valid snapshot 1`] = `
           Points
         </button>
         <i
-          class="fas fa-sort"
+          className="fas fa-sort"
         />
       </span>
       <span
@@ -134,7 +134,7 @@ exports[`App has a valid snapshot 1`] = `
   >
     <div>
       <div
-        class="lds-ellipsis"
+        className="lds-ellipsis"
       >
         <div />
         <div />
@@ -145,16 +145,6 @@ exports[`App has a valid snapshot 1`] = `
     </div>
   </div>
 </div>
-`;
-
-exports[`Button has a valid snapshot 1`] = `
-<button
-  className=""
-  onClick={[Function]}
-  type="button"
->
-  Test
-</button>
 `;
 
 exports[`Display List of Items has a valid snapshot 1`] = `
@@ -179,7 +169,7 @@ exports[`Display List of Items has a valid snapshot 1`] = `
         Title
       </button>
       <i
-        class="fas fa-sort"
+        className="fas fa-sort"
       />
     </span>
     <span
@@ -197,7 +187,7 @@ exports[`Display List of Items has a valid snapshot 1`] = `
         Author
       </button>
       <i
-        class="fas fa-sort"
+        className="fas fa-sort"
       />
     </span>
     <span
@@ -215,7 +205,7 @@ exports[`Display List of Items has a valid snapshot 1`] = `
         Comments
       </button>
       <i
-        class="fas fa-sort"
+        className="fas fa-sort"
       />
     </span>
     <span
@@ -233,7 +223,7 @@ exports[`Display List of Items has a valid snapshot 1`] = `
         Points
       </button>
       <i
-        class="fas fa-sort"
+        className="fas fa-sort"
       />
     </span>
     <span
@@ -312,7 +302,7 @@ exports[`Display List of Items has a valid snapshot 1`] = `
         type="button"
       >
         <i
-          class="fas fa-trash-alt"
+          className="fas fa-trash-alt"
         />
       </button>
     </span>
@@ -374,7 +364,7 @@ exports[`Display List of Items has a valid snapshot 1`] = `
         type="button"
       >
         <i
-          class="fas fa-trash-alt"
+          className="fas fa-trash-alt"
         />
       </button>
     </span>
@@ -389,10 +379,14 @@ exports[`Header with search has a valid snapshot 1`] = `
   <div
     className="Header"
   >
-    <form>
+    <form
+      onSubmit={[Function]}
+    >
       <input
         id="inputBox"
+        onChange={[Function]}
         placeholder="Topic"
+        value="test"
       />
       <button
         id="addTask"
